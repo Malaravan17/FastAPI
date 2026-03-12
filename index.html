@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>FastAPI CRUD</title>
+
+<style>
+
+body{
+    font-family: Arial;
+    background:#f4f6f8;
+    text-align:center;
+}
+
+.container{
+    width:400px;
+    margin:auto;
+    background:white;
+    padding:20px;
+    margin-top:40px;
+    border-radius:10px;
+    box-shadow:0 0 10px rgba(0,0,0,0.1);
+}
+
+input{
+    width:90%;
+    padding:8px;
+    margin:5px;
+}
+
+button{
+    padding:10px 15px;
+    margin:5px;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+.add{background:#4CAF50;color:white;}
+.get{background:#2196F3;color:white;}
+.update{background:#ff9800;color:white;}
+.delete{background:#f44336;color:white;}
+
+#result{
+    margin-top:15px;
+    font-weight:bold;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h2>FastAPI CRUD Panel</h2>
+
+<input id="id" placeholder="ID (for get/update/delete)">
+<input id="name" placeholder="Name">
+<input id="age" placeholder="Age">
+<input id="home" placeholder="Home">
+
+<br>
+
+<button class="add" onclick="addInfo()">Add</button>
+<button class="get" onclick="getInfo()">Get</button>
+<button class="update" onclick="updateInfo()">Update</button>
+<button class="delete" onclick="deleteInfo()">Delete</button>
+
+<div id="result"></div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
